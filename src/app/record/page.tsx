@@ -104,26 +104,6 @@ export default function RecordPage() {
             <audio controls src={audioUrl} className="w-full" />
           </div>
         )}
-
-        <div className="mt-4 space-y-2">
-          <p className="text-sm text-slate-400">
-            Next steps (not wired yet, just placeholders):
-          </p>
-          <div className="flex flex-col gap-2 sm:flex-row">
-            <button
-              disabled
-              className="flex-1 rounded-md bg-slate-800/80 text-slate-400 px-3 py-2 text-sm border border-slate-700 cursor-not-allowed"
-            >
-              Generate Notes (coming soon)
-            </button>
-            <button
-              disabled
-              className="flex-1 rounded-md bg-slate-800/80 text-slate-400 px-3 py-2 text-sm border border-slate-700 cursor-not-allowed"
-            >
-              Export to GoodNotes PDF (coming soon)
-            </button>
-          </div>
-        </div>
       </div>
     </main>
   );
