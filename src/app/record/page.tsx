@@ -13,7 +13,6 @@ export default function RecordPage() {
   const chunksRef = useRef<BlobPart[]>([]);
 
   useEffect(() => {
-    // Clean up if user navigates away mid-recording
     return () => {
       if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") {
         mediaRecorderRef.current.stop();
